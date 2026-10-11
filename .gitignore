@@ -6,9 +6,12 @@ venv/
 
 # Lokale data
 *.db
+.env
 data/
+cloud-computing.code-workspace
 
 # Editors
 .vscode/
 .idea/
 .DS_Store
+

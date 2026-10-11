@@ -22,7 +22,7 @@ app = Flask(__name__)
 
 # ------------------------------------------------------------------ instellingen
 
-DATABASE_URL = os.environ.get("DATABASE_URL", "")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 SQLITE_PAD = os.environ.get("SQLITE_PAD", "/data/storingen.db")
 APP_TITEL = os.environ.get("APP_TITEL", "Storingsmelder")
 
