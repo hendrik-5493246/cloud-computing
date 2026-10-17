@@ -1,5 +1,28 @@
-.git
-__pycache__
-*.db
+.git/
+
+# OS-artefacten van macOS en Windows
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors
+.vscode/
+.idea/
+*.code-workspace
+
+*.log
+*.tmp
+*~
+
+# Negeer Docker-bestanden
+.env
+Dockerfile
+.dockerignore
+
+# Specifiek voor dit project
 data/
-.venv
+*.db
