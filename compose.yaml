@@ -23,7 +23,9 @@ services:
         condition: service_healthy
 
   db:
-    image: postgres:19rc1
+    image: postgres:19rc1-alpine
+    restart: always
+    shm_size: 128mb
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}

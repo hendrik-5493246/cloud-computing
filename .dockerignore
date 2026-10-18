@@ -1,4 +1,5 @@
 .git/
+.github/
 
 # OS-artefacten van macOS en Windows
 .DS_Store
