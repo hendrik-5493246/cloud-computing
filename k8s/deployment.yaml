@@ -17,3 +17,7 @@ spec:
           image: ghcr.io/hendrik-5493246/storingsmelder:week4
           ports:
             - containerPort: 8000
+          # TODO: Gebruik secrets voor de database credentials
+          env:
+            - name: DATABASE_URL
+              value: "postgresql://postgres:postgres@db:5432/storingsmelder"
