@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: storingsmelder
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: storingsmelder
+  template:
+    metadata:
+      labels:
+        app: storingsmelder
+    spec:
+      containers:
+        - name: storingsmelder
+          image: ghcr.io/hendrik-5493246/storingsmelder:week4
+          ports:
+            - containerPort: 8000
